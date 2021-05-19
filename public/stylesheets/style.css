@@ -129,13 +129,14 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /*separacion entre columna y fila*/
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 }
 
@@ -146,6 +147,11 @@ img {
     /*puedo hacer variar el color verticalmente*/
     background-color: var(--primarioOscuro);
     padding: 1rem;
+}
+
+.precio {
+    font-size: 2.8rem;
+    color: var(--negro);
 }
 
 

@@ -3,7 +3,12 @@
 <div class="card" style="width: 18rem;">
     <img src="<%= unPlato.imagen %>" class="card-img-top" alt="...">
     <div class="card-body">
-      <p class="card-text">imagen: <%= unPlato.imagen %></p>
-      <a href="/verMas/<%= unPlato.UID %>" class="btn btn-lg btn-primary">Ver más</a>
+        <p class="card-text">
+            <%= unPlato.titulo %>
+        </p>
+        <p class="precio">
+            <%= unPlato.precio %>$
+        </p>
+        <a href="/verMas/<%= unPlato.UID %>" class="btn btn-lg btn-primary">Ver más</a>
     </div>
-  </div>
+</div>
