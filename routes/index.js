@@ -1,9 +1,30 @@
 var express = require('express');
 var router = express.Router();
 
+const platos = [
+  {
+    "nombre":"sopa",
+    "descripcion":"es una sopa",
+    "precio":123,
+    "imagen":"url"
+  },
+  {
+    "nombre":"pizza",
+    "descripcion":"es una pízza",
+    "precio":500,
+    "imagen":"url"
+  },
+  {
+    "nombre":"milanesa",
+    "descripcion":"es una milanesa",
+    "precio":300,
+    "imagen":"url"
+  }
+]
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Menu' });
+  res.render('index', { title: 'Menu', platos:platos});
 });
 
 router.get('/login', function(req, res, next) {
