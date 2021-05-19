@@ -113,6 +113,15 @@ img {
 /*Nuestros productos estoy dentro del main*/
 
 
+/*forma parte del main*/
+
+.contenedor {
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 /*Grid*/
 
 .grid {
