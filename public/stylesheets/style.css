@@ -187,6 +187,18 @@ botones y los iconos de mas y menos*/
 }
 
 
+/*boton*/
+
+button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+
 /* colores de fondos */
 
 .bg-primario {
