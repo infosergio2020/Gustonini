@@ -1,9 +1,71 @@
 <%- include("template/cabecera") %>
-<!-- aca comienza el body -->
+    <!-- aca comienza el body -->
+    <nav class="navegacion">
 
+        <a class="navegacion__tienda navegacion__tienda--activo" href="#">Entrada</a>
+        <a class="navegacion__tienda" href="#">Plato principal</a>
+        <a class="navegacion__tienda" href="#">Postre</a>
+    </nav>
     <main class="container">
-      <p>Bienvenido a <%= title %></p>
+        <p>Bienvenido al
+            <%= title %>
+        </p>
+        <div class="grid">
+            <div class="producto">
+                <a href="producto.html">
+
+                    <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa ">
+                    <div class="producto__informacion">
+                        <input class="formulario__submit" type="submit" value="Ver mas">
+                    </div>
+
+                </a>
+            </div>
+            <!--Producto -->
+            <div class="producto">
+                <a href="producto.html">
+
+                    <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa ">
+                    <div class="producto__informacion">
+                        <input class="formulario__submit" type="submit" value="Ver mas">
+                    </div>
+
+                </a>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+
+                    <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa ">
+                    <div class="producto__informacion">
+                        <input class="formulario__submit" type="submit" value="Ver mas">
+                    </div>
+
+                </a>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+
+                    <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa ">
+                    <div class="producto__informacion">
+                        <input class="formulario__submit" type="submit" value="Ver mas">
+                    </div>
+
+                </a>
+            </div>
+            <div class="producto">
+                <a href="producto.html">
+
+                    <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa ">
+                    <div class="producto__informacion">
+                        <input class="formulario__submit" type="submit" value="Ver mas">
+                    </div>
+
+                </a>
+            </div>
+        </div>
+
     </main>
 
-<!-- aca termina el body -->
-<%- include("template/pieDePagina") %>
+
+    <!-- aca termina el body -->
+    <%- include("template/pieDePagina") %>
