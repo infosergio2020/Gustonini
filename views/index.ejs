@@ -15,6 +15,7 @@
             
                 <div class="producto">
                     <a href="producto.html">
+                        
     
                         <img class="producto__imagen" src="img/1.jpg" alt="imagen camisa ">
                         <div class="producto__informacion">
@@ -26,9 +27,9 @@
                 
              <% } %> -->
 
-             <% platos.forEach(function(plato){ %>
+            <% platos.forEach(function(plato){ %>
                 <%- include('components/tarjetaPlato', {unPlato: plato}); %>
-              <% }); %>
+                    <% }); %>
 
     </main>
 
