@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//conectar con la BD de mongo
+require('./controllers/connection');
 
 //importando enrutadores
 var indexRouter = require('./routes/index');
