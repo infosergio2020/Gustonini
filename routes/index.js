@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+<<<<<<< HEAD
 const platos = [
   {
     "imagen":"/img/menu/Carnes/carnesyaves/1.jpg",
@@ -36,24 +37,31 @@ const platos = [
     "titulo":"Milanesa de polle",
     "descripcion":"es una milanesa inclusiva",
     "precio":400
-  }
+  },
+  {
+    "imagen": "/img/menu/Carnes/carnesyaves/6.jpg",
+    "UID": 5,
+    "titulo": "Milanesa napolitana (pollo o ternera)",
+    "descripcion": "es otra milanesa inclusiva",
+    "precio": 570
+}
 ]
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Menu', platos:platos});
+    res.render('index', { title: 'Menu', platos: platos });
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Login' });
+    res.render('login', { title: 'Login' });
 });
 
 router.get('/singup', function(req, res, next) {
-  res.render('registrarse', { title: 'Registrarse' });
+    res.render('registrarse', { title: 'Registrarse' });
 });
 
 router.get('/pedidoActual', function(req, res, next) {
-  res.render('pedidoActual', { title: 'Pedido actual' });
+    res.render('pedidoActual', { title: 'Pedido actual' });
 });
 
 router.get('/verMas/:id', function(req, res, next) {
@@ -61,7 +69,7 @@ router.get('/verMas/:id', function(req, res, next) {
 });
 
 router.get('/divisionDeCuentas', function(req, res, next) {
-  res.render('divisionDeCuentas', { title: 'Division de cuentas' });
+    res.render('divisionDeCuentas', { title: 'Division de cuentas' });
 });
 
 
