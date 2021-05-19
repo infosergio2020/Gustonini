@@ -1,15 +1,49 @@
 <%- include("template/cabecera") %>
-<!-- aca comienza el body -->
+    <!-- aca comienza el body -->
 
-    <main class="container">
+    <main class="contenedor">
 
-      <%- include('components/tarjetaPlato', {unPlato: plato}); %>
+        <h1>
+            <%= title %>
+        </h1>
+        <img style="width: 18rem; margin-bottom: 2rem;" src="<%= plato.imagen %>" alt="...">
+        <h2>
+            <%= plato.titulo %>
+        </h2>
+        <p class="text-dark">
+            <%= plato.descripcion %>
+        </p>
+        <p class="precio">
+            <%= plato.precio %>$
+        </p>
+        <div class="contenedor">
+            <div class="separar">
+                <div style="text-align: right;">
 
-      <h1> <%= title %></h1>
-      <h2> <%= plato.titulo %></h2>
-      <p class="text-dark"> <%= plato.descripcion %></p>
-      <span><%= plato.precio %></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-minus" width="52" height="52" viewBox="0 0 24 24" stroke-width="2.5" stroke="#771A84" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <circle cx="12" cy="12" r="9" />
+                      <line x1="9" y1="12" x2="15" y2="12" />
+                   </svg>
+                </div>
+
+
+                <p class="precio">
+                    1
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-plus" width="52" height="52" viewBox="0 0 24 24" stroke-width="2.5" stroke="#771A84" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="9" />
+              <line x1="9" y1="12" x2="15" y2="12" />
+              <line x1="12" y1="9" x2="12" y2="15" />
+            </svg>
+
+
+            </div>
+
+        </div>
+
     </main>
 
-<!-- aca termina el body -->
-<%- include("template/pieDePagina") %>
+    <!-- aca termina el body -->
+    <%- include("template/pieDePagina") %>
