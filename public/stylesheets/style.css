@@ -1,0 +1,61 @@
+/* custom properties (variables de CSS)*/
+:root{
+    --blanco: #ffffff;
+    --oscuro: #502364;
+    --primario: #4C2882;
+    --secundario: #9C27B9;
+    --gris: #D6B592;
+
+    /* --fuente-principal: 3.8rem; */
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+/* comienzo de hack rems*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y proximity;
+}*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;    /* 1rem = 10px */
+    font-family: 'Krub', sans-serif; /*aplica a todos los elementos de nuestro sitio*/
+}
+
+/* fin de hack para rems */
+
+/* GLOBALES */
+/* defino unas reglas para la tipografia */
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
+
+/* colores de fondos */
+
+.bg-primario{
+    background-color: var(--primario);
+}
+
+.bg-secundario{
+    background-color: var(--secundario);
+}
+
+.bg-oscuro{
+    background-color: var(--oscuro);
+}
+
+.bg-gris{
+    background-color: var(--gris);
+}
