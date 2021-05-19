@@ -2,7 +2,13 @@
 <!-- aca comienza el body -->
 
     <main class="container">
+
+      <%- include('components/tarjetaPlato', {unPlato: imagen}); %>
+
       <h1> <%= title %></h1>
+      <h2> <%= descripcion.titulo %></h2>
+      <p class="text-dark"> <%= descripcion.descripcion %></p>
+      <span><%= descripcion.precio %></span>
     </main>
 
 <!-- aca termina el body -->
