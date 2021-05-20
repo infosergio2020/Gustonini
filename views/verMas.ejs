@@ -17,10 +17,14 @@
             <%= plato.precio %>$
         </p>
         <script type="text/javascript">
-            var i = 0
+            var i = 1
 
-            function mostrar() {
-                document.getElementById('resultado').innerHTML = i;
+            window.onload = function() {
+             mostrar(i);
+            };
+
+            function mostrar(aux) {
+                document.getElementById('resultado').innerHTML = aux;
 
             }
 
