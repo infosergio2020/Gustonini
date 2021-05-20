@@ -60,7 +60,7 @@ router.get('/singup', function(req, res, next) {
 });
 
 router.get('/pedidoActual', function(req, res, next) {
-    res.render('pedidoActual', { title: 'Pedido actual' });
+    res.render('pedidoActual', { title: 'Pedido actual', plato: platos[req.params.id] });
 });
 
 router.get('/verMas/:id', function(req, res, next) {

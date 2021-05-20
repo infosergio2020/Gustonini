@@ -198,6 +198,26 @@ button {
     outline: none;
 }
 
+.redondo {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    text-align: center;
+}
+
+
+/* pedidoActual*/
+
+.griddos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*separacion entre columna y fila*/
+    gap: 1.5rem;
+}
+
 
 /* colores de fondos */
 

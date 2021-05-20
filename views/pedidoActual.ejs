@@ -1,9 +1,79 @@
 <%- include("template/cabecera") %>
-<!-- aca comienza el body -->
+    <!-- aca comienza el body -->
 
-    <main class="container">
-      <h1> <%= title %></h1>
+    <main class="contenedor">
+        <h1>
+            <%= title %>
+
+        </h1>
+
+
+        <form action="/action_page.php">
+            <input type="submit" value="Eliminar">
+            <div>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> milanesa 2 $24</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> milanesa 2 $24</label><br>
+
+            </div>
+
+
+        </form>
+        <h2> Total del pedido= $455</h2>
+        <script type="text/javascript">
+            function myFunction() {
+                var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                    x.style.visibility = "visible"; //pone visible el div que tiene myDIV
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+        <div class="griddos">
+
+
+            <div style="text-align: left; ">
+                <button onclick="myFunction()">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-circle-horizontal" width="52" height="52" viewBox="0 0 24 24" stroke-width="2.5" stroke="#771A84" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                              <circle cx="12" cy="12" r="9" />
+                              <line x1="8" y1="12" x2="8" y2="12.01" />
+                              <line x1="12" y1="12" x2="12" y2="12.01" />
+                              <line x1="16" y1="12" x2="16" y2="12.01" />
+                            </svg>
+                            <p>Ver más opciones</p>
+                        </button>
+
+            </div>
+            <div style="text-align: right;">
+                <button class="redondo">
+                    <div>
+                        <h3> Realizar pedido </h3> 
+
+                    </div>
+            </button>
+
+            </div>
+
+        </div>
+
+
+        <div id="myDIV" style="text-align: left; visibility: hidden;" class="grid">
+            <button>
+              <img src="/img/mozo1.svg" alt="icono de mozo" style="width:53px; height: 53px;">
+              <p>Llamar mozo</p>
+            </button>
+            <button>
+              <img src="/img/amigos.png" alt="icono de amigos" style="width:53px; height: 53px;">
+              <p>Dividirse la cuenta</p>
+            </button>
+
+
+        </div>
     </main>
 
-<!-- aca termina el body -->
-<%- include("template/pieDePagina") %>
+    <!-- aca termina el body -->
+    <%- include("template/pieDePagina") %>
