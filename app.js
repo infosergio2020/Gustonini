@@ -9,6 +9,7 @@ require('./controllers/connection');
 //importando enrutadores
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var platosRouter = require('./routes/plato');
 
 var app = express();
 
@@ -26,15 +27,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 //enlazando rutas con enrutadores
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/plato', platosRouter);
 
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
-
-
 
 
 // error handler
@@ -47,5 +46,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
 
 module.exports = app;

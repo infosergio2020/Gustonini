@@ -48,27 +48,27 @@ const platos = [{
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Menu', platos: platos });
+    res.render('index', { admin:false ,title: 'Menu', platos: platos });
 });
 
 router.get('/login', function(req, res, next) {
-    res.render('login', { title: 'Login' });
+    res.render('login', { admin:false ,title: 'Login' });
 });
 
 router.get('/singup', function(req, res, next) {
-    res.render('registrarse', { title: 'Registrarse' });
+    res.render('registrarse', { admin:false ,title: 'Registrarse' });
 });
 
 router.get('/pedidoActual', function(req, res, next) {
-    res.render('pedidoActual', { title: 'Pedido actual', plato: platos[req.params.id] });
+    res.render('pedidoActual', { admin:false ,title: 'Pedido actual', plato: platos[req.params.id] });
 });
 
 router.get('/verMas/:id', function(req, res, next) {
-    res.render('verMas', { title: 'Ver mas', plato: platos[req.params.id] });
+    res.render('verMas', { admin:false ,title: 'Ver mas', plato: platos[req.params.id] });
 });
 
 router.get('/divisionDeCuentas', function(req, res, next) {
-    res.render('divisionDeCuentas', { title: 'Division de cuentas' });
+    res.render('divisionDeCuentas', { admin:false ,title: 'Division de cuentas' });
 });
 
 
