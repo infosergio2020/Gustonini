@@ -15,3 +15,8 @@ Si intenta reutilizar este repo siga los siguientes pasos:
 
 Si quiere mas informacion acerca de la configuracion del servidor express de este proyecto lo puede encontrar desde la carpeta del proyecto en ./bin/www
 ahi encontraras la creacion y obtencion del puerto para el servidor, ademas de eventos programados para el seguimiento de errores si falla la creacion de la instancia del server, y para dar feedback acerca del puerto por el cual se esta escuchando las peticiones en caso de que el servidor se haya creado correctamente. 
+
+Equipo encargado del proyecto
+
+Ingeniera Ailigo Oriana: https://github.com/Oriailigo
+Ingeniero Aguilar Sergio: https://github.com/infosergio2020
