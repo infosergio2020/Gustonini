@@ -23,5 +23,6 @@ ahi encontraras la creacion y obtencion del puerto para el servidor, ademas de e
 
 | Linkedin | Repositorio |
 | ------ | ------ |
+
 | [Ailigo Oriana](https://www.linkedin.com/in/oriana-ailigo-80a2701a0/) | https://github.com/Oriailigo |
 | [Aguilar Sergio](https://www.linkedin.com/in/sergioaguilarsoria/) | https://github.com/infosergio2020 |
